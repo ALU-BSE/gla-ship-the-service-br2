@@ -22,8 +22,9 @@ jobs:
       
       - uses: astral-sh/setup-uv@v4
 
-     
-      - run: uv pip install -r requirements.txt
+
+      
+      - run: uv pip install --system -r requirements.txt
 
       - run: uv run flake8 app/ tests/
 
