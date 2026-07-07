@@ -8,6 +8,14 @@ def register_routes(app):
 
     @app.route("/districts")
     def districts():
-        return jsonify({
-            "districts": ["Westlands", "Kibera", "Karen", "Eastleigh", "Kasarani"]
-        })
+        return jsonify(
+            {
+                "districts": [
+                    "Westlands",
+                    "Kibera",
+                    "Karen",
+                    "Eastleigh",
+                    "Kasarani",
+                ]
+            }
+        )
